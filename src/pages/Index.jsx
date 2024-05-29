@@ -22,40 +22,43 @@ const Index = () => {
           <Text fontSize="lg">Fill out the form below to apply for credit.</Text>
         </Box>
 
-        <DownloadBanner />
-        {step === 1 ? (
-          <Box width="100%" p={6} boxShadow="md" borderRadius="md" bg="white">
-            <form onSubmit={handleFirstStepSubmit}>
-              <VStack spacing={4}>
-                <FormControl id="name" isRequired>
-                  <FormLabel>Name</FormLabel>
-                  <Input placeholder="Enter your name" />
-                </FormControl>
+        <HStack spacing={4} width="100%" alignItems="flex-start">
+          <DownloadBanner />
+          {step === 1 ? (
+            <Box width="100%" p={6} boxShadow="md" borderRadius="md" bg="white">
+              <form onSubmit={handleFirstStepSubmit}>
+                <VStack spacing={4}>
+                  <FormControl id="name" isRequired>
+                    <FormLabel>Name</FormLabel>
+                    <Input placeholder="Enter your name" />
+                  </FormControl>
 
-                <FormControl id="email" isRequired>
-                  <FormLabel>Email</FormLabel>
-                  <Input type="email" placeholder="Enter your email" />
-                </FormControl>
+                  <FormControl id="email" isRequired>
+                    <FormLabel>Email</FormLabel>
+                    <Input type="email" placeholder="Enter your email" />
+                  </FormControl>
 
-                <FormControl id="phone" isRequired>
-                  <FormLabel>Phone Number</FormLabel>
-                  <Input type="tel" placeholder="Enter your phone number" />
-                </FormControl>
+                  <FormControl id="phone" isRequired>
+                    <FormLabel>Phone Number</FormLabel>
+                    <Input type="tel" placeholder="Enter your phone number" />
+                  </FormControl>
 
-                <FormControl id="message">
-                  <FormLabel>Message</FormLabel>
-                  <Textarea placeholder="Enter your message" />
-                </FormControl>
+                  <FormControl id="message">
+                    <FormLabel>Message</FormLabel>
+                    <Textarea placeholder="Enter your message" />
+                  </FormControl>
 
-                <Button colorScheme="teal" type="submit" width="full" mt={4}>
-                  Submit
-                </Button>
-              </VStack>
-            </form>
-          </Box>
-        ) : (
-          <SecondStepForm setStep={setStep} />
-        )}
+                  <Button colorScheme="teal" type="submit" width="full" mt={4}>
+                    Submit
+                  </Button>
+                </VStack>
+              </form>
+            </Box>
+          ) : (
+            <SecondStepForm setStep={setStep} />
+          )}
+          <DownloadBanner />
+        </HStack>
       </VStack>
     </Container>
   );
