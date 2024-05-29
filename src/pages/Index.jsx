@@ -7,36 +7,36 @@ const Index = () => {
       <VStack spacing={8} width="100%">
         <Box textAlign="center">
           <Heading as="h1" size="2xl" mb={4}>
-            Get Your Credit
+            Obțineți Creditul Dvs
           </Heading>
-          <Text fontSize="lg">Complete the form below to apply for credit.</Text>
+          <Text fontSize="lg">Completați formularul de mai jos pentru a aplica pentru credit.</Text>
         </Box>
 
         <Box width="100%" p={6} boxShadow="md" borderRadius="md" bg="white">
           <form>
             <VStack spacing={4}>
               <FormControl id="name" isRequired>
-                <FormLabel>Name</FormLabel>
-                <Input placeholder="Enter your name" />
+                <FormLabel>Nume</FormLabel>
+                <Input placeholder="Introduceți numele dvs" />
               </FormControl>
 
               <FormControl id="email" isRequired>
                 <FormLabel>Email</FormLabel>
-                <Input type="email" placeholder="Enter your email" />
+                <Input type="email" placeholder="Introduceți email-ul dvs" />
               </FormControl>
 
               <FormControl id="phone" isRequired>
-                <FormLabel>Phone Number</FormLabel>
-                <Input type="tel" placeholder="Enter your phone number" />
+                <FormLabel>Număr de Telefon</FormLabel>
+                <Input type="tel" placeholder="Introduceți numărul dvs de telefon" />
               </FormControl>
 
               <FormControl id="message">
-                <FormLabel>Message</FormLabel>
-                <Textarea placeholder="Enter your message" />
+                <FormLabel>Mesaj</FormLabel>
+                <Textarea placeholder="Introduceți mesajul dvs" />
               </FormControl>
 
               <Button colorScheme="teal" type="submit" width="full">
-                Submit
+                Trimite
               </Button>
             </VStack>
           </form>
@@ -47,10 +47,10 @@ const Index = () => {
             <Image src="https://images.unsplash.com/photo-1461419912973-9964f1f54b24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxlYm9vayUyMGNvdmVyfGVufDB8fHx8MTcxNjk3NzEyNXww&ixlib=rb-4.0.3&q=80&w=1080" boxSize="100px" objectFit="cover" borderRadius="md" />
             <VStack alignItems="flex-start">
               <Text fontSize="lg" fontWeight="bold">
-                Download Our Free eBook
+                Descărcați eBook-ul nostru gratuit
               </Text>
-              <Text>Learn the secrets to improving your credit score with our comprehensive guide.</Text>
-              <IconButton aria-label="Download eBook" icon={<FaDownload />} colorScheme="teal" />
+              <Text>Aflați secretele îmbunătățirii scorului dvs de credit cu ghidul nostru cuprinzător.</Text>
+              <IconButton aria-label="Descărcați eBook-ul" icon={<FaDownload />} colorScheme="teal" />
             </VStack>
           </HStack>
         </Box>
