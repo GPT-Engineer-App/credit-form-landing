@@ -7,10 +7,10 @@ const DownloadBanner = () => {
       <HStack spacing={4} justifyContent="center">
         <VStack alignItems="flex-start">
           <Text fontSize="lg" fontWeight="bold">
-            Descărcați eBook-ul nostru gratuit
+            Download our free eBook
           </Text>
-          <Text>Aflați secretele îmbunătățirii scorului dvs de credit cu ghidul nostru cuprinzător.</Text>
-          <IconButton aria-label="Descărcați eBook-ul" icon={<FaDownload />} colorScheme="teal" />
+          <Text>Learn the secrets to improving your credit score with our comprehensive guide.</Text>
+          <IconButton aria-label="Download eBook" icon={<FaDownload />} colorScheme="teal" />
         </VStack>
       </HStack>
     </Box>

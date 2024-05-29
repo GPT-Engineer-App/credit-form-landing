@@ -8,52 +8,39 @@ const Index = () => {
       <VStack spacing={8} width="100%">
         <Box textAlign="center">
           <Heading as="h1" size="2xl" mb={4}>
-            Obțineți Creditul Dvs
+            Get Your Credit
           </Heading>
-          <Text fontSize="lg">Completați formularul de mai jos pentru a aplica pentru credit.</Text>
+          <Text fontSize="lg">Fill out the form below to apply for credit.</Text>
         </Box>
 
         <Box width="100%" p={6} boxShadow="md" borderRadius="md" bg="white">
           <form>
             <VStack spacing={4}>
               <FormControl id="name" isRequired>
-                <FormLabel>Nume</FormLabel>
-                <Input placeholder="Introduceți numele dvs" />
+                <FormLabel>Name</FormLabel>
+                <Input placeholder="Enter your name" />
               </FormControl>
 
               <FormControl id="email" isRequired>
                 <FormLabel>Email</FormLabel>
-                <Input type="email" placeholder="Introduceți email-ul dvs" />
+                <Input type="email" placeholder="Enter your email" />
               </FormControl>
 
               <FormControl id="phone" isRequired>
-                <FormLabel>Număr de Telefon</FormLabel>
-                <Input type="tel" placeholder="Introduceți numărul dvs de telefon" />
+                <FormLabel>Phone Number</FormLabel>
+                <Input type="tel" placeholder="Enter your phone number" />
               </FormControl>
 
               <FormControl id="message">
-                <FormLabel>Mesaj</FormLabel>
-                <Textarea placeholder="Introduceți mesajul dvs" />
+                <FormLabel>Message</FormLabel>
+                <Textarea placeholder="Enter your message" />
               </FormControl>
 
               <Button colorScheme="teal" type="submit" width="full" mt={4}>
-                Trimite
+                Submit
               </Button>
             </VStack>
           </form>
-        </Box>
-
-        <Box textAlign="center" width="100%" p={6} boxShadow="md" borderRadius="md" bg="white">
-          <HStack spacing={4} justifyContent="center">
-            <VStack alignItems="flex-start">
-              <Text fontSize="lg" fontWeight="bold">
-                Descărcați eBook-ul nostru gratuit
-              </Text>
-              <Text>Aflați secretele îmbunătățirii scorului dvs de credit cu ghidul nostru cuprinzător.</Text>
-
-              <IconButton aria-label="Descărcați eBook-ul" icon={<FaDownload />} colorScheme="teal" />
-            </VStack>
-          </HStack>
         </Box>
       </VStack>
     </Container>
