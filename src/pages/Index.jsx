@@ -8,10 +8,8 @@ const Index = () => {
         <Box textAlign="center">
           <Heading as="h1" size="2xl" mb={4}>
             Obțineți Creditul Dvs
-            <Image src="https://images.unsplash.com/photo-1556742400-b5b7c512f1f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNlfGVufDB8fHx8MTcxNjk3NzEyNXww&ixlib=rb-4.0.3&q=80&w=1080" boxSize="200px" objectFit="cover" borderRadius="md" mt={4} />
           </Heading>
           <Text fontSize="lg">Completați formularul de mai jos pentru a aplica pentru credit.</Text>
-          <Image src="https://images.unsplash.com/photo-1567427018141-0584cfcbf1b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNlfGVufDB8fHx8MTcxNjk3NzEyNXww&ixlib=rb-4.0.3&q=80&w=1080" boxSize="200px" objectFit="cover" borderRadius="md" mt={4} />
         </Box>
 
         <Box width="100%" p={6} boxShadow="md" borderRadius="md" bg="white">
@@ -46,13 +44,12 @@ const Index = () => {
 
         <Box textAlign="center" width="100%" p={6} boxShadow="md" borderRadius="md" bg="white">
           <HStack spacing={4} justifyContent="center">
-            <Image src="https://images.unsplash.com/photo-1556742400-b5b7c512f1f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNlfGVufDB8fHx8MTcxNjk3NzEyNXww&ixlib=rb-4.0.3&q=80&w=1080" boxSize="100px" objectFit="cover" borderRadius="md" />
             <VStack alignItems="flex-start">
               <Text fontSize="lg" fontWeight="bold">
                 Descărcați eBook-ul nostru gratuit
               </Text>
               <Text>Aflați secretele îmbunătățirii scorului dvs de credit cu ghidul nostru cuprinzător.</Text>
-              <Image src="https://images.unsplash.com/photo-1567427018141-0584cfcbf1b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNlfGVufDB8fHx8MTcxNjk3NzEyNXww&ixlib=rb-4.0.3&q=80&w=1080" boxSize="100px" objectFit="cover" borderRadius="md" mt={4} />
+
               <IconButton aria-label="Descărcați eBook-ul" icon={<FaDownload />} colorScheme="teal" />
             </VStack>
           </HStack>
