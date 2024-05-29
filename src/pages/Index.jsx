@@ -22,6 +22,7 @@ const Index = () => {
           <Text fontSize="lg">Fill out the form below to apply for credit.</Text>
         </Box>
 
+        <DownloadBanner />
         {step === 1 ? (
           <Box width="100%" p={6} boxShadow="md" borderRadius="md" bg="white">
             <form onSubmit={handleFirstStepSubmit}>
