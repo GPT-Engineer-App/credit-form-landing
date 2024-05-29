@@ -1,5 +1,6 @@
-import { Container, VStack, Text, Heading, Input, Button, FormControl, FormLabel, Textarea, Box, IconButton, HStack, Image } from "@chakra-ui/react";
+import { Container, VStack, Text, Heading, Input, Button, FormControl, FormLabel, Textarea, Box, IconButton, HStack } from "@chakra-ui/react";
 import { FaDownload } from "react-icons/fa";
+import DownloadBanner from "../components/DownloadBanner";
 
 const Index = () => {
   return (
