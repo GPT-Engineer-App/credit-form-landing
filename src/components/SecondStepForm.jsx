@@ -1,7 +1,7 @@
-import { VStack, FormControl, FormLabel, Input, Button, Slider, SliderTrack, SliderFilledTrack, SliderThumb, Box } from "@chakra-ui/react";
+import { VStack, FormControl, FormLabel, Input, Button, Slider, SliderTrack, SliderFilledTrack, SliderThumb, Box, HStack } from "@chakra-ui/react";
 import { useState } from "react";
 
-const SecondStepForm = () => {
+const SecondStepForm = ({ setStep }) => {
   const [amount, setAmount] = useState(0);
 
   const handleSecondStepSubmit = (e) => {
@@ -33,9 +33,14 @@ const SecondStepForm = () => {
             <Input placeholder="Enter the reason" />
           </FormControl>
 
-          <Button colorScheme="teal" type="submit" width="full" mt={4}>
-            Submit
-          </Button>
+          <HStack width="full" mt={4}>
+            <Button colorScheme="gray" onClick={() => setStep(1)} width="full">
+              Back
+            </Button>
+            <Button colorScheme="teal" type="submit" width="full">
+              Submit
+            </Button>
+          </HStack>
         </VStack>
       </form>
     </Box>

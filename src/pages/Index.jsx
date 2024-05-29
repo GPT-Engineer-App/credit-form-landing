@@ -53,7 +53,7 @@ const Index = () => {
             </form>
           </Box>
         ) : (
-          <SecondStepForm />
+          <SecondStepForm setStep={setStep} />
         )}
       </VStack>
     </Container>
